@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter no. a: ");
+    scanf("%d",&a);
+    printf("Enter no.b: ");
+    scanf("%d",&b);
+
+    c=a+b;
+    printf("addition of a and b is : %d",c);
+    return 0;
+}
