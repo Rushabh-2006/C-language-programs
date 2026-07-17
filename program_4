@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int hour,second,minute,sec;
+
+    printf("enter second :");
+    scanf("%d",&second);
+
+   hour=second/3600;
+
+   printf("%0.2d:",hour);
+
+   minute=((second-(3600*hour))/60);
+
+   printf("%0.2d:",minute);
+
+   sec=second-hour*3600-minute*60;
+
+   printf("%0.2d",sec);
+   return 0;
+}
