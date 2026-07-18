@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,add,sub,multi,divi,cal;
+
+    printf("Enter number a:");
+    scanf("%d",&a);
+
+    printf("Enter number b:");
+    scanf("%d",&b);
+
+    printf("\n enter 1 for addition\n enter 2 for substraction\n enter 3 for multiplication\n enter 4 for division\n");
+    scanf("%d",&cal);
+
+    if(cal==1)
+    {
+        add=a+b;
+        printf("Addition of the a&b is %d",add);
+    }
+    if(cal==2)
+    {
+        sub=a-b;
+        printf("Substraction of the a&b is %d",sub);
+    }
+    if(cal==3)
+    {
+        multi=a*b;
+        printf("Multiplication of the a*b is %d",multi);
+    }
+    if(cal==4)
+    {
+        divi=a/b;
+        printf("Division of the a/b is %d",divi);
+    }
+    return 0;
+}
