@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+int main ()
+{
+    float a,b,c;
+
+    printf("\nenter first side of triangle:");
+    scanf("%f",&a);
+
+    printf("\nenter second side of triangle:");
+    scanf("%f",&b);
+
+    printf("\nenter third side of triangle:");
+    scanf("%f",&c);
+
+    if(a==b && a==c)
+    printf("\ntriangle is equilateral triangle");
+
+    if(a!=b && b!=c && a!=c)
+    printf("\ntriangle is scalene triangle");
+
+    if((a==b) && a!=c || (a==c) && a!=b || (b==c) && a!=c)
+    printf("\ntriangle is isosceles triangle");
+
+    if((pow(a,2) + pow(b,2) == pow(c,2))|| (pow(b,2) + pow(c,2) == pow(a,2)) || (pow(a,2) + pow(c,2) == pow(b,2)))
+    printf("\ntriangle is right angle triangle");
+
+    return 0;
+
+}
