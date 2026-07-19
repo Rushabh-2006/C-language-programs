@@ -1,0 +1,22 @@
+#include<stdio.h>
+void main()
+{
+ int n,nn=0,r,temp;
+ printf("Enter n:");
+ scanf("%d",&n);
+ temp=n;
+ while(n>0)
+ {
+ r=n%10;
+ nn=(nn*10)+r;
+ n=n/10;
+ }
+ if(nn==temp)
+ {
+ printf("is Palindrome");
+ }
+ else
+ {
+ printf("is not Palindrome");
+ }
+ }
