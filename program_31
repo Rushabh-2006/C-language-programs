@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+ int a[10],i,n;
+ printf("Enter the length of array:");
+ scanf("%d",&n);
+ for(i=0;i<n;i++)
+ {
+ printf("a[%d]:",i);
+ scanf("%d",&a[i]);
+ }
+ printf("normal order:\n");
+ for(i=0;i<n;i++)
+ {
+ printf("%d\t",a[i]);
+ }
+ printf("\n");
+ printf("The reverse order:\n ");
+ for(i=n-1;i>=0;i--)
+ {
+ printf("%d\t",a[i]);
+ }
+ }
