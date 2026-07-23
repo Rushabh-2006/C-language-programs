@@ -1,0 +1,8 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ char ch[10] = "hello";
+ char ch1[10]="";
+ printf("Copied string is : %s",strcpy(ch1,ch));
+}
