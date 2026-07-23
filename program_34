@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+ char ch[10] = "hello";
+ char ch1[10]="world";
+ printf("Str1 = %s\n",ch);
+ printf("Str2 = %s\n",ch1);
+ strcat(ch,ch1);
+ printf("Merged string = %s\n",ch);
+}
